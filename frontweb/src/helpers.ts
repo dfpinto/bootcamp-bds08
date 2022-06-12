@@ -1,15 +1,9 @@
-import { SalesByPaymentMethodDTO, SalesByStoreDTO } from './types';
+import { SalesByGenreDTO } from './types';
+import { formatGender } from './utils/formatters';
 
-export const buildSalesByStore = (sales: SalesByStoreDTO[]) => {
+export const buildSalesByGenre = (sales: SalesByGenreDTO[]) => {
   return {
-    labels: sales.map((sale) => sale.storeName),
-    series: sales.map((sale) => sale.sum)
-  };
-};
-
-export const buildSalesByPaymentMethod = (sales: SalesByPaymentMethodDTO[]) => {
-  return {
-    labels: sales.map((sale) => sale.description),
+    labels: sales.map((sale) => formatGender(sale.gender)),
     series: sales.map((sale) => sale.sum)
   };
 };

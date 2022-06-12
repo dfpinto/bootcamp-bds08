@@ -31,13 +31,13 @@ export const buildPieChartConfig = (labels: string[] = [], name: string) => {
       }
     },
     dataLabels: {
-      enabled: false
+      enabled: true
     },
     plotOptions: {
       pie: {
         size: 400,
         donut: {
-          size: '85%',
+          size: '65%',
           labels: {
             show: true,
             name: {

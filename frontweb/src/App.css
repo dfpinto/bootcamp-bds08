@@ -1,10 +1,8 @@
 .app-container {
-  padding: 0 55px;
 }
 
-.sales-overview-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-  margin-bottom: 40px;
+.app-filter-container {
+}
+
+.app-sales-by-store-container {
 }

@@ -10,7 +10,7 @@ type Props = {
 
 function PieChartCard({ labels = [], name, series = [] }: Props) {
   return (
-    <header className="pie-chart-card base-card">
+    <>
       <ReactApexChart
         options={buildPieChartConfig(labels, name)}
         type="donut"
@@ -18,7 +18,7 @@ function PieChartCard({ labels = [], name, series = [] }: Props) {
         height={400}
         series={series}
       />
-    </header>
+    </>
   );
 }
 

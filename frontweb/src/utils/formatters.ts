@@ -8,14 +8,6 @@ export const formatPrice = (price: number) => {
   }).format(price);
 };
 
-export const formatDate = (date: Date | string) => {
-  return new Date(date).toLocaleDateString();
-};
-
-export const formatDateToServer = (date?: Date) => {
-  return date?.toISOString().substring(0, 10);
-};
-
 export const formatGender = (gender: Gender) => {
   const textByGender = {
     MALE: 'Masculino',

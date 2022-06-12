@@ -1,0 +1,53 @@
+.sales-by-store-container {
+  height: 520px;
+  padding: 10px;
+  background-color: var(--secundary-color);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sales-by-store-quantity-container {
+  margin-top: 30px;
+  margin-left: 30px;
+  font-family: 'Ubuntu';
+}
+
+.sales-by-store-quantity-value {
+  color: var(--ligth-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+}
+
+.sales-by-store-quantity-label {
+  color: var(--grey-ligth-100-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.sales-by-store-chart {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  /* abaixo de 1200 vai aplicar isso */
+  .sales-by-store-container {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+  /* abaixo de 992 vai aplicar isso */
+  .sales-by-store-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
